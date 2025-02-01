@@ -2,10 +2,10 @@
 
 DOMAIN = "openai_tts"
 CONF_API_KEY = 'api_key'
-CONF_TTS_MODEL = 'tts_model'
+CONF_TTS_MODEL = 'model'
 CONF_VOICE = 'voice'
 CONF_SPEED = 'speed'
-CONF_TTS_URL = 'tts_url'
+CONF_TTS_URL = 'url'
 UNIQUE_ID = 'unique_id'
 TTS_MODELS = ["tts-1", "tts-1-hd"]
 VOICES = ["alloy", "echo", "fable", "onyx", "nova", "shimmer"]
