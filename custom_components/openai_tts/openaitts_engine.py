@@ -14,7 +14,7 @@ class OpenAITTSEngine:
         headers: dict = {}
         if self._api_key:
             headers["Authorization"] = f"Bearer {self._api_key}"
-        headers["Transfer-Encoding"] = "chunked"
+        # headers["Transfer-Encoding"] = "chunked"
         data: dict = {
             "model": self._model,
             "input": text,
