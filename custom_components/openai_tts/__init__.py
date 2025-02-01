@@ -5,7 +5,7 @@ from homeassistant.const import Platform
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 
-PLATFORMS: list[str] = [Platform.TTS]
+PLATFORMS: list[str] = [Platform.TTS]  # TODO: add this back Platform.STT
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:

@@ -11,7 +11,10 @@ class OpenAITTSEngine:
 
     def get_tts(self, text: str):
         """ Makes request to OpenAI TTS engine to convert text into audio"""
-        headers: dict = {"Authorization": f"Bearer {self._api_key}"} if self._api_key else {}
+        headers: dict = {}
+        if self._api_key:
+            headers["Authorization"] = f"Bearer {self._api_key}"
+        headers["Transfer-Encoding"] = "chunked"
         data: dict = {
             "model": self._model,
             "input": text,
