@@ -19,7 +19,7 @@ class OpenAITTSEngine:
             "model": self._model,
             "input": text,
             "voice": self._voice,
-            "response_format": "mp3",
+            "response_format": "wav",
             "speed": self._speed
         }
         return requests.post(self._url, headers=headers, json=data)
